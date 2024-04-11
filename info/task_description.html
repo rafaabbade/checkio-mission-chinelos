@@ -1,18 +1,34 @@
 <!-- Describe task in general -->
 
 <p>
-    {{ENUNCIADO}}
+    Uma comunidade indígena produz chinelos de juta e criou um site para vender a produção online. Os chinelos são de apenas um tipo, mas são produzidos em vários tamanhos.</p>
+<p>Você foi contratado(a) para desenvolver um programa de controle de estoque para o site. O estoque
+pode ser visto como uma tabela com uma única linha, em que cada coluna representa um tamanho,
+como mostrado na figura (a) abaixo. Na figura, os tamanhos são representados por números de 1 a
+5. Assim, a tabela da figura (a) informa que o estoque do chinelo de tamanho 1 é 4 unidades, e o
+estoque do chinelo de tamanho 4 é 3 unidades.</p>
+<img  title="example" src="{{MEDIA}}chinelos.png" alt="example" style="max-height: 300px"/>
+
+<p>Quando um chinelo é vendido, o estoque deve ser atualizado. Por exemplo, se um chinelo de tamanho 1 for vendido, o estoque atualizado é mostrado na figura (b). Se o estoque para um tamanho de
+chinelo tem valor zero, chinelos desse tamanho não podem ser vendidos (por exemplo o chinelo de
+tamanho 3). Ou seja, a venda não é efetivada.</p>
+<p>Dados o estoque inicial e a lista de pedidos de clientes, escreva um programa para determinar
+quantos chinelos são efetivamente vendidos no total. Cada pedido se refere a um único chinelo. As
+vendas são processadas sequencialmente, na ordem em que os pedidos foram feitos. Se uma venda
+não é possível por falta de estoque, o pedido correspondente é ignorado.
 </p>
 
 
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada </strong> {{ENTRADA}}
+    <strong>Entrada </strong> Um inteiro N, o número de tamanhos de chinelos no estoque. Uma lista indicando a quantidade de chinelos de cada tamanho, conforme indicado na imagem acima. O número inteiro P, representando o número de pedidos recebidos. Uma lista indicando os tamanhos dos chinelos pedidos.
 </p>
 
 <p>
-    <strong>Saída: </strong> {{SAIDA}}
+    <strong>Saída: </strong> Uma única linha contendo um inteiro, o número total de chinelos efetivamente vendidos.
+
+
 </p>
 
 
@@ -28,7 +44,9 @@ countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
 <pre class="brush: python">
-    {{EXEMPLOS}}
+    calcular_vendas(5, [4, 2, 0, 3, 2], 2, [1, 3]) == 1
+calcular_vendas(4, [1, 3, 2, 5], 4, [3, 3, 3, 4]) >> 3
+
 </pre>
 {% endif %}
 </div>

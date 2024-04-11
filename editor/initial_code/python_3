@@ -1,1 +1,15 @@
-{{CODIGO INICIAL}}
+def calcular_vendas(N, estoque, P, pedidos):
+    # Seu código aqui
+    return None
+
+
+
+print("Example:")
+print(dias_para_epidemia(1, 5, 156))
+
+# As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
+
+assert calcular_vendas(5, [4, 2, 0, 3, 2], 2, [1, 3]) == 1
+assert calcular_vendas(4, [1, 3, 2, 5], 4, [3, 3, 3, 4]) == 3
+
+print("Seu código passou pelos testes, clique em Check para avançar!")
