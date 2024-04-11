@@ -5,11 +5,14 @@ def calcular_vendas(N, estoque, P, pedidos):
 
 
 print("Example:")
-print(dias_para_epidemia(1, 5, 156))
+print(calcular_vendas(5, [4, 2, 0, 3, 2], 2, [1, 3]))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
 
 assert calcular_vendas(5, [4, 2, 0, 3, 2], 2, [1, 3]) == 1
 assert calcular_vendas(4, [1, 3, 2, 5], 4, [3, 3, 3, 4]) == 3
+assert calcular_vendas(3, [0, 0, 0], 3, [1, 2, 3]) == 0
+assert calcular_vendas(3, [5, 5, 5], 6, [1, 1, 2, 2, 3, 3]) == 6
+assert calcular_vendas(5, [10, 0, 10, 0, 10], 5, [2, 4, 1, 3, 5]) == 3
 
 print("Seu código passou pelos testes, clique em Check para avançar!")
